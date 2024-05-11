@@ -1,0 +1,32 @@
+import java.lang.reflect.Array;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map;
+import java.util.Set;
+
+public class Demo {
+
+	public static void main(String[] args) {
+		
+		String str="helloo";
+		char [] ch=str.toCharArray();
+		int value=0;
+		Map<Character, Integer> map=new HashMap<>();
+		for(char i:ch)		{
+			
+			if(map.containsValue(i))
+			{
+				value++;
+			}
+			else
+			{
+				value++;
+				map.put(i, value);
+				
+			}
+		}
+		System.out.println(map);
+	}
+
+}
